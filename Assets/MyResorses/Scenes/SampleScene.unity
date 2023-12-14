@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 227518413}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LastRightGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 402020436}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: RightGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 505619142}
   - component: {fileID: 505619135}
   - component: {fileID: 505619134}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: SpaceShip
   m_TagString: SpaceShip
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 672573646}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -991,7 +991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1077509200}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LeftGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1082,7 +1082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1307626964}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: LastLeftGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

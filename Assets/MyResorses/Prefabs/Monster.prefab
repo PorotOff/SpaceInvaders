@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 689323783174633517}
   - component: {fileID: 8351712598606757347}
   - component: {fileID: 3809318123402338053}
-  - component: {fileID: 8146464359133605054}
-  - component: {fileID: 6859873807093605101}
   - component: {fileID: 6656926942792558294}
-  m_Layer: 0
+  - component: {fileID: 6859873807093605101}
+  m_Layer: 11
   m_Name: Monster
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -151,33 +150,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3
---- !u!114 &8146464359133605054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6091355298402827972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85741e01cd79188459be33b9985a5756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monsterHP: 1
-  scoreForMonster: 100
---- !u!114 &6859873807093605101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6091355298402827972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61770c08c9728a941b04163ac9bdae11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallingSpeed: 2
 --- !u!114 &6656926942792558294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,4 +164,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   speed: 2.5
-  damage: 1
+  defaultDamage: 1
+  toPlayerBaseDamage: 2
+  scoreForMonster: 100
+--- !u!114 &6859873807093605101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091355298402827972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61770c08c9728a941b04163ac9bdae11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallingSpeed: 2
