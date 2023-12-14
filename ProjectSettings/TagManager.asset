@@ -7,6 +7,8 @@ TagManager:
   - Bullet
   - SpaceShip
   - Monster
+  - TopBoundary
+  - BottomBoundary
   layers:
   - Default
   - TransparentFX
@@ -14,13 +16,13 @@ TagManager:
   - 
   - Water
   - UI
+  - Boundary
   - 
   - 
   - 
   - 
-  - Bullet
-  - Enemie
-  - Player
+  - 
+  - 
   - 
   - 
   - 

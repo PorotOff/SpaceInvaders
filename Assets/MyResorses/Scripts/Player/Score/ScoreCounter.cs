@@ -13,11 +13,11 @@ public class ScoreCounter : MonoBehaviour
 
     private void OnEnable()
     {
-        MonsterDie.OnMonsterDie += AddScore;
+        Monster.OnMonsterDie += AddScore;
     }
     private void OnDisable()
     {
-        MonsterDie.OnMonsterDie -= AddScore;
+        Monster.OnMonsterDie -= AddScore;
     }
 
     private void AddScore(int score)

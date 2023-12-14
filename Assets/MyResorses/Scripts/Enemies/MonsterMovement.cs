@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class MonsterMovement : MonoBehaviour
 {
-    private Rigidbody2D monster;
+    private Monster monster;
 
-    [SerializeField] private float fallingSpeed = 5f;
+    private Rigidbody2D rigidBody;
 
     private void Start()
     {
-        monster = GetComponent<Rigidbody2D>();
-        monster.AddForce(Vector2.down * fallingSpeed, ForceMode2D.Impulse);
+        monster = GetComponent<Monster>();
+        rigidBody = GetComponent<Rigidbody2D>();
+
+        rigidBody.AddForce(Vector2.down * monster.Speed, ForceMode2D.Impulse);
     }
 }

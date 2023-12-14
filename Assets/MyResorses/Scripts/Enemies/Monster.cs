@@ -4,41 +4,44 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     [SerializeField] private float health = 1f;
-    public static event Action OnMonsterDie;
 
     [SerializeField] private float speed = 2.5f;
+    public float Speed
+    {
+        get { return speed; }
+    }
 
     [Header ("Damage settings")]
     [SerializeField] private int defaultDamage = 1;
-    [SerializeField] private int toPlayerBaseDamage = 2;
 
     [SerializeField] private int scoreForMonster = 100;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public static event Action<int> OnMonsterDie;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         SpaceShip spaceShip = collision.gameObject.GetComponent<SpaceShip>();
 
         if (spaceShip != null)
         {
-            spaceShip.ReceiveDamage(defaultDamage);
+            spaceShip.TakeDamge(defaultDamage);
         }
     }
-
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "BottomBoundary")
         {
-            //TakeDamage();
+            Destroy(gameObject);
         }
     }
-    
+
     public void TakeDamage(int damage)
     {
         health -= damage;
 
         if (health <= 0)
         {
-            OnMonsterDie?.Invoke();
+            OnMonsterDie?.Invoke(scoreForMonster);
             Destroy(gameObject);
         }
     }
